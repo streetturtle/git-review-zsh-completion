@@ -1,3 +1,19 @@
+# ------------------------------------------------------------------------------
+# Description
+# -----------
+#
+#  Completion script for git-review (https://github.com/openstack-infra/git-review)
+#
+#  Source: https://github.com/streetturtle/git-review-zsh-completion
+#
+# ------------------------------------------------------------------------------
+# Author
+# -------
+#
+#  * Pavel Makhov (https://github.com/streetturtle)
+#
+# ------------------------------------------------------------------------------
+
 #compdef git-review
 
 _arguments  \
