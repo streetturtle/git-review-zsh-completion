@@ -18,34 +18,34 @@
 
 _arguments  \
     '(-h --help)'{-h,--help}'[show this help message and exit]' \
-    {-t,--topic}'[Topic to submit branch to]' \
-    {-T,--no-topic}'[No topic except if explicitly provided]' \
-    --reviewer'[Add reviewers to uploaded patch sets.]' \
-    {-D,--draft}'[Submit review as a draft]' \
-    {-c,--compatible}'[Push change to refs/for/* for compatibility with Gerrit versions < 2.3. Ignored if -D/--draft is used.]' \
-    {-n,--dry-run}'[Don''t actually submit the branch for review]' \
-    {-i,--new-changeid}'[Regenerate Change-id before submitting]' \
+    {-t,--topic}'[topic to submit branch to]' \
+    {-T,--no-topic}'[no topic except if explicitly provided]' \
+    --reviewer'[add reviewers to uploaded patch sets]' \
+    {-D,--draft}'[submit review as a draft]' \
+    {-c,--compatible}'[push change to refs/for/* for compatibility with Gerrit versions < 2.3. Ignored if -D/--draft is used]' \
+    {-n,--dry-run}'[don''t actually submit the branch for review]' \
+    {-i,--new-changeid}'[regenerate Change-id before submitting]' \
     {-r,--remote}'[git remote to use for gerrit]' \
-    --use-pushurl'[Use remote push-url logic instead of separate remotes]' \
-    {-R,--no-rebase}'[Dont rebase changes before submitting.]' \
-    {-F,--force-rebase}'[Force rebase even when not needed.]' \
-    --track'[Use tracked branch as default.]' \
-    --no-track'[Ignore tracked branch.]' \
-    {-d,--download}'[Download the contents of an existing gerrit review into a branch]:branch:->branch' \
-    {-x,--cherrypick}'[Apply the contents of an existing gerrit review onto the current branch and commit (cherry pick; not recommended in most situations)]' \
-    {-X,--cherrypickindicate}'[Apply the contents of an existing gerrit review onto the current branch and commit, indicating its origin]' \
-    {-N,--cherrypickonly}'[Apply the contents of an existing gerrit review to the working directory and prepare for commit]' \
-    {-m,--compare}'[Download specified and latest (or NEW_PS) patchsets of an existing gerrit review into a branches, rebase on master (skipped on conflicts or when -R is specified) and show their differences]' \
-    {-u,--update}'[Force updates from remote locations]' \
-    {-s,--setup}'[Just run the repo setup commands but don''t submit anything]' \
-    {-f,--finish}'[Close down this branch and switch back to master on successful submission]' \
-    {-l,--list}'[List available reviews for the current project, if passed more than once, will show more information]' \
-    {-y,--yes}'[Indicate that you do, in fact, understand if you are submitting more than one patch]' \
-    {-v,--verbose}'[Output more information about what''s going on]' \
-    --no-custom-script'[Do not run custom scripts.]' \
-    --color'[Show color output. --color (without <when>) is the same as --color=always. <when> can be one of always, never, auto. Behaviour can also be controlled by the color.ui and color.review configuration settings.'] \
-    --no-color'[Turn off colored output. Can be used to override configuration options. Same as setting --color=never.]' \
-    --license'[Print the license and exit]' \
+    --use-pushurl'[use remote push-url logic instead of separate remotes]' \
+    {-R,--no-rebase}'[dont rebase changes before submitting]' \
+    {-F,--force-rebase}'[force rebase even when not needed]' \
+    --track'[use tracked branch as default]' \
+    --no-track'[ignore tracked branch]' \
+    {-d,--download}'[download the contents of an existing gerrit review into a branch]:branch:->branch' \
+    {-x,--cherrypick}'[apply the contents of an existing gerrit review onto the current branch and commit (cherry pick; not recommended in most situations)]' \
+    {-X,--cherrypickindicate}'[apply the contents of an existing gerrit review onto the current branch and commit, indicating its origin]' \
+    {-N,--cherrypickonly}'[apply the contents of an existing gerrit review to the working directory and prepare for commit]' \
+    {-m,--compare}'[download specified and latest (or NEW_PS) patchsets of an existing gerrit review into a branches, rebase on master (skipped on conflicts or when -R is specified) and show their differences]' \
+    {-u,--update}'[force updates from remote locations]' \
+    {-s,--setup}'[just run the repo setup commands but don''t submit anything]' \
+    {-f,--finish}'[close down this branch and switch back to master on successful submission]' \
+    {-l,--list}'[list available reviews for the current project, if passed more than once, will show more information]' \
+    {-y,--yes}'[indicate that you do, in fact, understand if you are submitting more than one patch]' \
+    {-v,--verbose}'[output more information about what''s going on]' \
+    --no-custom-script'[do not run custom scripts]' \
+    --color'[show color output. --color (without <when>) is the same as --color=always. <when> can be one of always, never, auto. Behaviour can also be controlled by the color.ui and color.review configuration settings.'] \
+    --no-color'[turn off colored output. Can be used to override configuration options. Same as setting --color=never]' \
+    --license'[print the license and exit]' \
     --version'[show program''s version number and exit]' \
     && ret=0
 
